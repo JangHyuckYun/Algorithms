@@ -3,11 +3,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-// 1. 숫자 배열에서 idx와 값을 찾는다.
-// 2. 찾은 값으로, 오리지널 배열에서 해당 값에 해당하는 idx와 문자값을 가져온다.
-// 2-1. addedGenres안에 해당 문자가 이미 존재 시, addedGenres및 result 안에 추가 후, 해당 관련 문자를 배열에서 삭제한다.
-// 3. 2-1 진행 안했을 시 -> result안에 값을 추가하고, addedGenres 안에 문자값을 넣는다.
-// 4. 문자 배열에 값이 없으면 종료.
 class Solution {
       public int[] solution(String[] genres, int[] plays) {
         List<Integer> findedIdx = new ArrayList<>();
