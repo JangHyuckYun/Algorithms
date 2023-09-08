@@ -4,12 +4,10 @@ function solution(cards1, cards2, goal) {
 			cards1.shift();
 			return false;
 		}
-		
 		if (cards2[0] === goalWord) {
 			cards2.shift();
 			return false;
 		}
-		
 		return true;
 	}) ? "Yes" : "No";
 }
