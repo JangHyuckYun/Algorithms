@@ -11,6 +11,6 @@ function solution(keymap, targets) {
 	}, {});
 	
 	return targets
-	.map(str => [...str].map(str => alphaObj[str]).reduce((acc, _) => acc + _, 0))
+	.map(str => [...str].map(str => alphaObj[str]).reduce((acc, n) => acc + n, 0))
 	.reduce((acc, n) => [...acc, isNaN(n) ? -1 : n], []);
 }
